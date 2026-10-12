@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Richard Lewis — Web Designer</title>
+<meta name="description" content="Richard Lewis is a freelance web designer in Windsor, Ontario, building clean, hand-coded, responsive one-page websites since 2019.">
+<style>
+  :root { --gold:#c9a227; --bg:#0e0e0e; --card:#161616; --text:#f2f2f2; --muted:#a8a8a8; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:Georgia,'Times New Roman',serif; line-height:1.6; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 24px; }
+  header.hero { text-align:center; padding:90px 24px 60px; border-bottom:1px solid #2a2a2a; }
+  header.hero h1 { font-size:clamp(2.4rem,6vw,4rem); color:var(--gold); letter-spacing:2px; margin-bottom:10px; }
+  header.hero .tag { font-size:1.25rem; color:var(--text); margin-bottom:14px; }
+  header.hero .loc { color:var(--muted); font-size:1rem; margin-bottom:26px; }
+  .btn { display:inline-block; background:var(--gold); color:#111; text-decoration:none; padding:13px 34px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; letter-spacing:1px; border-radius:3px; margin:6px; }
+  .btn.ghost { background:transparent; color:var(--gold); border:1px solid var(--gold); }
+  section { padding:56px 0; }
+  h2 { color:var(--gold); font-size:1.7rem; letter-spacing:1px; margin-bottom:18px; text-align:center; }
+  .about p { max-width:720px; margin:0 auto 14px; color:#ddd; font-size:1.08rem; text-align:center; }
+  .skills { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:22px; }
+  .skills span { border:1px solid #3a3a3a; color:var(--muted); padding:7px 16px; border-radius:20px; font-family:Arial,Helvetica,sans-serif; font-size:.9rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:22px; margin-top:10px; }
+  .card { background:var(--card); border:1px solid #2a2a2a; border-radius:6px; overflow:hidden; cursor:pointer; transition:transform .2s, border-color .2s; }
+  .card:hover { transform:translateY(-4px); border-color:var(--gold); }
+  .card img { width:100%; height:340px; object-fit:cover; object-position:top; display:block; }
+  .card .cap { padding:14px 16px; font-family:Arial,Helvetica,sans-serif; }
+  .card .cap b { color:var(--text); font-size:1rem; }
+  .card .cap small { display:block; color:var(--muted); margin-top:4px; }
+  .contact { text-align:center; border-top:1px solid #2a2a2a; }
+  .contact p { color:#ddd; margin-bottom:8px; font-size:1.08rem; }
+  .contact a { color:var(--gold); }
+  footer { text-align:center; padding:26px; color:#666; font-size:.85rem; font-family:Arial,Helvetica,sans-serif; }
+  .lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,.92); z-index:50; align-items:center; justify-content:center; padding:20px; }
+  .lightbox.open { display:flex; }
+  .lightbox img { max-width:92vw; max-height:88vh; border:1px solid #333; border-radius:4px; }
+  .lightbox .close { position:absolute; top:18px; right:26px; color:#fff; font-size:2rem; cursor:pointer; font-family:Arial; }
+  .lightbox .nav { position:absolute; top:50%; color:var(--gold); font-size:2.4rem; cursor:pointer; font-family:Arial; user-select:none; padding:12px; }
+  .lightbox .prev { left:14px; } .lightbox .next { right:14px; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>RICHARD LEWIS</h1>
+    <p class="tag">Web Designer — clean, hand-coded, responsive websites</p>
+    <p class="loc">Windsor, Ontario · Available remotely · Full-time availability</p>
+    <a class="btn" href="#work">VIEW MY WORK</a>
+    <a class="btn ghost" href="#contact">GET IN TOUCH</a>
+  </div>
+</header>
+
+<section class="about">
+  <div class="wrap">
+    <h2>ABOUT</h2>
+    <p>I'm a freelance web designer building one-page websites since 2019. Every site I make is hand-coded in HTML and CSS — no bloated page builders, no templates. Just fast, clean, responsive pages that look good on any screen.</p>
+    <p>I design for real businesses: salons, shops, restaurants, local services. I care about how a site feels to use, not just how it looks — clear structure, readable type, and calls to action people actually click.</p>
+    <div class="skills">
+      <span>HTML</span><span>CSS</span><span>Responsive Design</span><span>One-Page Websites</span><span>Landing Pages</span><span>Small Business Sites</span>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>SELECTED WORK</h2>
+    <p style="text-align:center;color:var(--muted);margin-bottom:26px;font-family:Arial,Helvetica,sans-serif;">Original design samples — click any design to view it full-size.</p>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>CONTACT</h2>
+    <p>I'm available for freelance and contract web design work, starting immediately.</p>
+    <p>Email: <a href="mailto:richardallenlewis2@gmail.com">richardallenlewis2@gmail.com</a></p>
+    <p>Phone: <a href="tel:+12267587783">+1 (226) 758-7783</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/richard-lewis-60b454443/">richard-lewis</a></p>
+  </div>
+</section>
+
+<footer>© 2026 Richard Lewis · Windsor, Ontario</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="close" id="lbClose">&times;</span>
+  <span class="nav prev" id="lbPrev">&#10094;</span>
+  <img id="lbImg" src="" alt="Design sample full view">
+  <span class="nav next" id="lbNext">&#10095;</span>
+</div>
+
+<script>
+const works = [
+  {img:'img/sample-02.jpg', title:'Velvet & Vine — Hair Salon', sub:'Elegant one-page site with service menu and booking flow'},
+  {img:'img/sample-10.jpg', title:'Pemberton & Finch — Barbershop', sub:'Victorian-style luxury design with tariff and reservations'},
+  {img:'img/sample-24.jpg', title:'Scoop Troop — Ice Cream Shop', sub:'Playful, colourful design with flavour menu'},
+  {img:'img/sample-40.jpg', title:'Prof. Whittle — Escape Rooms', sub:'Blueprint-style design with room listings and booking'},
+  {img:'img/sample-05.jpg', title:'Honest Abe Auto — Auto Repair', sub:'Bold one-page site with services and booking'},
+  {img:'img/sample-13.jpg', title:'Thornwood Forge — Ironworks', sub:'Old English craftsmanship style with gallery'},
+  {img:'img/sample-20.jpg', title:'The Monarch Ballroom — Event Venue', sub:'Royal, elegant design for events and bookings'},
+  {img:'img/sample-27.jpg', title:'Rollerama — Roller Rink', sub:'Retro neon design with sessions and pricing'},
+  {img:'img/sample-30.jpg', title:'Flannel & Fig — Coffeehouse', sub:'Warm, cosy design with menu and hours'},
+  {img:'img/sample-33.jpg', title:'Side B Records — Record Shop', sub:'Music-store design with catalogue and visit info'},
+  {img:'img/sample-36.jpg', title:'Blue Horizon — Scenic Air Tours', sub:'Airy travel design with tours and booking'},
+  {img:'img/sample-38.jpg', title:'Ironhide Leatherworks — Leather Goods', sub:'Rugged craft design with product showcase'},
+];
+const grid = document.getElementById('grid');
+works.forEach((w,i)=>{
+  const d = document.createElement('div');
+  d.className='card';
+  d.innerHTML = `<img src="${w.img}" alt="${w.title}" loading="lazy"><div class="cap"><b>${w.title}</b><small>${w.sub}</small></div>`;
+  d.onclick = ()=>openLb(i);
+  grid.appendChild(d);
+});
+let cur = 0;
+const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg');
+function openLb(i){ cur=i; lbImg.src=works[i].img; lb.classList.add('open'); }
+function step(n){ cur=(cur+n+works.length)%works.length; lbImg.src=works[cur].img; }
+document.getElementById('lbClose').onclick=()=>lb.classList.remove('open');
+document.getElementById('lbPrev').onclick=e=>{e.stopPropagation();step(-1);};
+document.getElementById('lbNext').onclick=e=>{e.stopPropagation();step(1);};
+lb.onclick=e=>{ if(e.target===lb) lb.classList.remove('open'); };
+document.addEventListener('keydown',e=>{ if(!lb.classList.contains('open'))return; if(e.key==='Escape')lb.classList.remove('open'); if(e.key==='ArrowLeft')step(-1); if(e.key==='ArrowRight')step(1); });
+</script>
+</body>
+</html>
