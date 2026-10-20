@@ -38,16 +38,31 @@
   .lightbox.open { display:flex; }
   .lightbox img { max-width:92vw; max-height:88vh; border:1px solid #333; border-radius:4px; }
   .lightbox .close { position:absolute; top:18px; right:26px; color:#fff; font-size:2rem; cursor:pointer; font-family:Arial; }
+  nav.topnav { position:sticky; top:0; z-index:40; background:rgba(10,10,10,.96); border-bottom:1px solid #2a2a2a; }
+  nav.topnav .wrap { display:flex; flex-wrap:wrap; gap:4px; justify-content:center; padding-top:10px; padding-bottom:10px; }
+  nav.topnav a { color:var(--text); text-decoration:none; font-family:Arial,Helvetica,sans-serif; font-size:.92rem; letter-spacing:1px; padding:8px 14px; border:1px solid #333; border-radius:20px; }
+  nav.topnav a:hover { color:var(--gold); border-color:var(--gold); }
 </style>
 </head>
 <body>
 
+<nav class="topnav">
+  <div class="wrap">
+    <a href="#finished">FINISHED WORK</a>
+    <a href="#sketches">SKETCHES</a>
+    <a href="#originals">ORIGINAL ART</a>
+    <a href="#print">PRINT &amp; WORKBOOKS</a>
+    <a href="#web">WEB DESIGN</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+</nav>
+
 <header class="hero">
   <div class="wrap">
     <h1>RICHARD LEWIS</h1>
-    <p class="tag">Artist &amp; Designer — hand-drawn blackwork, dark art, posters, print &amp; web</p>
+    <p class="tag">Artist &amp; Designer — hand-drawn blackwork, dark art, print &amp; web</p>
     <p class="loc">Windsor, Ontario · Available remotely · Full-time availability</p>
-    <a class="btn" href="#featured">VIEW MY WORK</a>
+    <a class="btn" href="#finished">VIEW MY WORK</a>
     <a class="btn ghost" href="#contact">GET IN TOUCH</a>
   </div>
 </header>
@@ -55,18 +70,18 @@
 <section class="about">
   <div class="wrap">
     <h2>ABOUT</h2>
-    <p>I'm an artist and designer. My core work is drawn by hand — pencil studies, blackwork, and dark fantasy art from my own world, The Undersung. I also design posters, print and workbook layouts, and clean one-page websites, hand-coded in HTML and CSS.</p>
-    <p>Everything below is my own work: the drawings are hand-drawn and scanned from paper, the posters and print pieces are designed by me, and every website is hand-coded — no page builders, no templates.</p>
+    <p>I'm an artist and designer. My core work is drawn by hand — pencil studies, blackwork, and dark fantasy art from my own world, The Undersung. I also design print and workbook layouts, and clean one-page websites, hand-coded in HTML and CSS.</p>
+    <p>Everything below is my own work, made by hand — no AI-generated art anywhere on this page. The drawings are hand-drawn and scanned from paper, the print pieces are designed by me, and every website is hand-coded — no page builders, no templates.</p>
     <div class="skills">
-      <span>Pencil &amp; Blackwork</span><span>Dark Fantasy Art</span><span>Character Art</span><span>Poster Design</span><span>Print &amp; Workbook Design</span><span>HTML</span><span>CSS</span><span>Responsive Design</span><span>One-Page Websites</span>
+      <span>Pencil &amp; Blackwork</span><span>Dark Fantasy Art</span><span>Character Art</span><span>Print &amp; Workbook Design</span><span>HTML</span><span>CSS</span><span>Responsive Design</span><span>One-Page Websites</span>
     </div>
   </div>
 </section>
 
-<section id="featured" class="alt">
+<section id="finished" class="alt">
   <div class="wrap">
-    <h2>FEATURED WORK</h2>
-    <p class="sec-sub">Hand-drawn pieces — click any image to view it full-size.</p>
+    <h2>FINISHED WORK</h2>
+    <p class="sec-sub">Finished hand-drawn pieces — click any image to view it full-size.</p>
     <div class="grid">
       <div class="card"><img src="img/art-jester-screaming.jpg" alt="Screaming Jester — pencil study" loading="lazy"><div class="cap"><b>Screaming Jester</b><small>Pencil study — hand-drawn</small></div></div>
       <div class="card"><img src="img/art-mother-child.jpg" alt="Mother and Child — pencil portrait" loading="lazy"><div class="cap"><b>Mother and Child</b><small>Pencil portrait — hand-drawn</small></div></div>
@@ -79,15 +94,16 @@
 
 <section id="sketches">
   <div class="wrap">
-    <h2>INK SKETCHES</h2>
+    <h2>SKETCHES</h2>
     <p class="sec-sub">Hand-drawn ink sketches — the raw sketchbook. Click any image to view it full-size.</p>
     <div class="grid">
-      <div class="card"><img src="img/sketch-01-jester-lettering.jpg" alt="Jester Pair — ink sketch" loading="lazy"><div class="cap"><b>Jester Pair</b><small>Ink sketch — hand-drawn</small></div></div>
+      <div class="card"><img src="img/sketch-01-smoke-demons.jpg" alt="Smoke Demons — ink sketch" loading="lazy"><div class="cap"><b>Smoke Demons</b><small>Ink sketch — hand-drawn</small></div></div>
       <div class="card"><img src="img/sketch-02-tophat-skeleton.jpg" alt="Top-Hat Skeleton — ink sketch" loading="lazy"><div class="cap"><b>Top-Hat Skeleton</b><small>Ink sketch — hand-drawn</small></div></div>
-      <div class="card"><img src="img/sketch-03-flame-demons.jpg" alt="Flame Demons — ink sketch" loading="lazy"><div class="cap"><b>Flame Demons</b><small>Ink sketch — hand-drawn</small></div></div>
-      <div class="card"><img src="img/sketch-04-weeping-skull.jpg" alt="Weeping Skull — ink sketch" loading="lazy"><div class="cap"><b>Weeping Skull</b><small>Ink sketch — hand-drawn</small></div></div>
-      <div class="card"><img src="img/sketch-05-melting-demons.jpg" alt="Melting Demons — ink sketch" loading="lazy"><div class="cap"><b>Melting Demons</b><small>Ink sketch — hand-drawn</small></div></div>
-      <div class="card"><img src="img/sketch-06-bandana-jester.jpg" alt="Bandana Jester — ink sketch" loading="lazy"><div class="cap"><b>Bandana Jester</b><small>Ink sketch — hand-drawn</small></div></div>
+      <div class="card"><img src="img/sketch-03-jester-lettering.jpg" alt="Jester Pair — ink sketch" loading="lazy"><div class="cap"><b>Jester Pair</b><small>Ink sketch — hand-drawn</small></div></div>
+      <div class="card"><img src="img/sketch-04-flame-demons.jpg" alt="Flame Demons — ink sketch" loading="lazy"><div class="cap"><b>Flame Demons</b><small>Ink sketch — hand-drawn</small></div></div>
+      <div class="card"><img src="img/sketch-05-weeping-skull.jpg" alt="Weeping Skull — ink sketch" loading="lazy"><div class="cap"><b>Weeping Skull</b><small>Ink sketch — hand-drawn</small></div></div>
+      <div class="card"><img src="img/sketch-06-melting-demons.jpg" alt="Melting Demons — ink sketch" loading="lazy"><div class="cap"><b>Melting Demons</b><small>Ink sketch — hand-drawn</small></div></div>
+      <div class="card"><img src="img/sketch-07-bandana-jester.jpg" alt="Bandana Jester — ink sketch" loading="lazy"><div class="cap"><b>Bandana Jester</b><small>Ink sketch — hand-drawn</small></div></div>
     </div>
   </div>
 </section>
@@ -106,21 +122,11 @@
   </div>
 </section>
 
-<section id="posters" class="alt">
-  <div class="wrap">
-    <h2>POSTERS</h2>
-    <p class="sec-sub">Poster designs from The Undersung series.</p>
-    <div class="grid">
-      <div class="card"><img src="img/poster-fen.jpg" alt="Fen — Undersung poster" loading="lazy"><div class="cap"><b>Fen</b><small>Poster design — The Undersung</small></div></div>
-      <div class="card"><img src="img/poster-roots.jpg" alt="Roots — Undersung poster" loading="lazy"><div class="cap"><b>Roots</b><small>Poster design — The Undersung</small></div></div>
-      <div class="card"><img src="img/poster-ashen-shore.jpg" alt="The Ashen Shore — Undersung poster" loading="lazy"><div class="cap"><b>The Ashen Shore</b><small>Poster design — The Undersung</small></div></div>
-    </div>
-  </div>
-</section>
+
 
 <section id="print">
   <div class="wrap">
-    <h2>PRINT &amp; WORKBOOK DESIGN</h2>
+    <h2>PRINT &amp; WORKBOOKS</h2>
     <p class="sec-sub">Educational print design — full personalized curriculum workbooks, written and designed by me.</p>
     <div class="grid">
       <div class="card"><img src="img/print-curriculum-week1.jpg" alt="Roots Curriculum — personalized homeschool workbook design" loading="lazy"><div class="cap"><b>Roots Curriculum</b><small>Personalized homeschool workbook design</small></div></div>
