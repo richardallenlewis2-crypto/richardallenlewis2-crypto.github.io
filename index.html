@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Richard Lewis — Web Designer</title>
-<meta name="description" content="Richard Lewis is a freelance web designer in Windsor, Ontario, building clean, hand-coded, responsive one-page websites since 2019.">
+<title>Richard Lewis — Artist &amp; Designer</title>
+<meta name="description" content="Richard Lewis is an artist and designer in Windsor, Ontario — hand-drawn blackwork and dark art, posters, print and workbook design, and hand-coded one-page websites.">
 <style>
   :root { --gold:#c9a227; --bg:#0e0e0e; --card:#161616; --text:#f2f2f2; --muted:#a8a8a8; }
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -17,14 +17,16 @@
   .btn { display:inline-block; background:var(--gold); color:#111; text-decoration:none; padding:13px 34px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; letter-spacing:1px; border-radius:3px; margin:6px; }
   .btn.ghost { background:transparent; color:var(--gold); border:1px solid var(--gold); }
   section { padding:56px 0; }
-  h2 { color:var(--gold); font-size:1.7rem; letter-spacing:1px; margin-bottom:18px; text-align:center; }
+  section.alt { background:#111; }
+  h2 { color:var(--gold); font-size:1.7rem; letter-spacing:1px; margin-bottom:14px; text-align:center; }
+  .sec-sub { text-align:center; color:var(--muted); margin-bottom:26px; font-family:Arial,Helvetica,sans-serif; }
   .about p { max-width:720px; margin:0 auto 14px; color:#ddd; font-size:1.08rem; text-align:center; }
   .skills { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:22px; }
   .skills span { border:1px solid #3a3a3a; color:var(--muted); padding:7px 16px; border-radius:20px; font-family:Arial,Helvetica,sans-serif; font-size:.9rem; }
   .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:22px; margin-top:10px; }
   .card { background:var(--card); border:1px solid #2a2a2a; border-radius:6px; overflow:hidden; cursor:pointer; transition:transform .2s, border-color .2s; }
   .card:hover { transform:translateY(-4px); border-color:var(--gold); }
-  .card img { width:100%; height:340px; object-fit:cover; object-position:top; display:block; }
+  .card img { width:100%; height:360px; object-fit:cover; object-position:top; display:block; }
   .card .cap { padding:14px 16px; font-family:Arial,Helvetica,sans-serif; }
   .card .cap b { color:var(--text); font-size:1rem; }
   .card .cap small { display:block; color:var(--muted); margin-top:4px; }
@@ -36,8 +38,6 @@
   .lightbox.open { display:flex; }
   .lightbox img { max-width:92vw; max-height:88vh; border:1px solid #333; border-radius:4px; }
   .lightbox .close { position:absolute; top:18px; right:26px; color:#fff; font-size:2rem; cursor:pointer; font-family:Arial; }
-  .lightbox .nav { position:absolute; top:50%; color:var(--gold); font-size:2.4rem; cursor:pointer; font-family:Arial; user-select:none; padding:12px; }
-  .lightbox .prev { left:14px; } .lightbox .next { right:14px; }
 </style>
 </head>
 <body>
@@ -45,9 +45,9 @@
 <header class="hero">
   <div class="wrap">
     <h1>RICHARD LEWIS</h1>
-    <p class="tag">Web Designer — clean, hand-coded, responsive websites</p>
+    <p class="tag">Artist &amp; Designer — hand-drawn blackwork, dark art, posters, print &amp; web</p>
     <p class="loc">Windsor, Ontario · Available remotely · Full-time availability</p>
-    <a class="btn" href="#work">VIEW MY WORK</a>
+    <a class="btn" href="#featured">VIEW MY WORK</a>
     <a class="btn ghost" href="#contact">GET IN TOUCH</a>
   </div>
 </header>
@@ -55,26 +55,89 @@
 <section class="about">
   <div class="wrap">
     <h2>ABOUT</h2>
-    <p>I'm a freelance web designer building one-page websites since 2019. Every site I make is hand-coded in HTML and CSS — no bloated page builders, no templates. Just fast, clean, responsive pages that look good on any screen.</p>
-    <p>I design for real businesses: salons, shops, restaurants, local services. I care about how a site feels to use, not just how it looks — clear structure, readable type, and calls to action people actually click.</p>
+    <p>I'm an artist and designer. My core work is drawn by hand — pencil studies, blackwork, and dark fantasy art from my own world, The Undersung. I also design posters, print and workbook layouts, and clean one-page websites, hand-coded in HTML and CSS.</p>
+    <p>Everything below is my own work: the drawings are hand-drawn and scanned from paper, the posters and print pieces are designed by me, and every website is hand-coded — no page builders, no templates.</p>
     <div class="skills">
-      <span>HTML</span><span>CSS</span><span>Responsive Design</span><span>One-Page Websites</span><span>Landing Pages</span><span>Small Business Sites</span>
+      <span>Pencil &amp; Blackwork</span><span>Dark Fantasy Art</span><span>Character Art</span><span>Poster Design</span><span>Print &amp; Workbook Design</span><span>HTML</span><span>CSS</span><span>Responsive Design</span><span>One-Page Websites</span>
     </div>
   </div>
 </section>
 
-<section id="work">
+<section id="featured" class="alt">
   <div class="wrap">
-    <h2>SELECTED WORK</h2>
-    <p style="text-align:center;color:var(--muted);margin-bottom:26px;font-family:Arial,Helvetica,sans-serif;">Original design samples — click any design to view it full-size.</p>
-    <div class="grid" id="grid"></div>
+    <h2>FEATURED WORK</h2>
+    <p class="sec-sub">Hand-drawn pieces — click any image to view it full-size.</p>
+    <div class="grid">
+      <div class="card"><img src="img/art-jester-screaming.jpg" alt="Screaming Jester — pencil study" loading="lazy"><div class="cap"><b>Screaming Jester</b><small>Pencil study — hand-drawn</small></div></div>
+      <div class="card"><img src="img/art-mother-child.jpg" alt="Mother and Child — pencil portrait" loading="lazy"><div class="cap"><b>Mother and Child</b><small>Pencil portrait — hand-drawn</small></div></div>
+      <div class="card"><img src="img/art-jester-skull.jpg" alt="Jester Skull Study — pencil" loading="lazy"><div class="cap"><b>Jester Skull Study</b><small>Pencil — hand-drawn</small></div></div>
+      <div class="card"><img src="img/art-frog.jpg" alt="Save the Frogs — hand-drawn blackwork" loading="lazy"><div class="cap"><b>Save the Frogs</b><small>Hand-drawn blackwork</small></div></div>
+      <div class="card"><img src="img/art-daum25.jpg" alt="Daum Museum 25th Anniversary — hand-drawn design" loading="lazy"><div class="cap"><b>Daum Museum 25th Anniversary</b><small>Hand-drawn design</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="originals">
+  <div class="wrap">
+    <h2>ORIGINAL ART — THE UNDERSUNG</h2>
+    <p class="sec-sub">Original pieces from The Undersung, a dark fantasy world of my own creation.</p>
+    <div class="grid">
+      <div class="card"><img src="img/art-orig-01-doorway-watcher.jpg" alt="Doorway Watcher — original art" loading="lazy"><div class="cap"><b>Doorway Watcher</b><small>Original art — The Undersung</small></div></div>
+      <div class="card"><img src="img/art-orig-04-the-offering.jpg" alt="The Offering — original art" loading="lazy"><div class="cap"><b>The Offering</b><small>Original art — The Undersung</small></div></div>
+      <div class="card"><img src="img/art-orig-09-face-in-dark.jpg" alt="Face in the Dark — original art" loading="lazy"><div class="cap"><b>Face in the Dark</b><small>Original art — The Undersung</small></div></div>
+      <div class="card"><img src="img/art-orig-11-the-stare.jpg" alt="The Stare — original art" loading="lazy"><div class="cap"><b>The Stare</b><small>Original art — The Undersung</small></div></div>
+      <div class="card"><img src="img/art-orig-15-lantern-procession.jpg" alt="Lantern Procession — original art" loading="lazy"><div class="cap"><b>Lantern Procession</b><small>Original art — The Undersung</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="posters" class="alt">
+  <div class="wrap">
+    <h2>POSTERS</h2>
+    <p class="sec-sub">Poster designs from The Undersung series.</p>
+    <div class="grid">
+      <div class="card"><img src="img/poster-fen.jpg" alt="Fen — Undersung poster" loading="lazy"><div class="cap"><b>Fen</b><small>Poster design — The Undersung</small></div></div>
+      <div class="card"><img src="img/poster-roots.jpg" alt="Roots — Undersung poster" loading="lazy"><div class="cap"><b>Roots</b><small>Poster design — The Undersung</small></div></div>
+      <div class="card"><img src="img/poster-ashen-shore.jpg" alt="The Ashen Shore — Undersung poster" loading="lazy"><div class="cap"><b>The Ashen Shore</b><small>Poster design — The Undersung</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="print">
+  <div class="wrap">
+    <h2>PRINT &amp; WORKBOOK DESIGN</h2>
+    <p class="sec-sub">Educational print design — full personalized curriculum workbooks, written and designed by me.</p>
+    <div class="grid">
+      <div class="card"><img src="img/print-curriculum-week1.jpg" alt="Roots Curriculum — personalized homeschool workbook design" loading="lazy"><div class="cap"><b>Roots Curriculum</b><small>Personalized homeschool workbook design</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="web" class="alt">
+  <div class="wrap">
+    <h2>WEB DESIGN</h2>
+    <p class="sec-sub">One-page websites, hand-coded in HTML and CSS since 2019 — fast, clean, responsive. Original design samples.</p>
+    <div class="grid">
+      <div class="card"><img src="img/sample-02.jpg" alt="Velvet &amp; Vine — Hair Salon website design" loading="lazy"><div class="cap"><b>Velvet &amp; Vine — Hair Salon</b><small>Elegant one-page site with service menu and booking flow</small></div></div>
+      <div class="card"><img src="img/sample-10.jpg" alt="Pemberton &amp; Finch — Barbershop website design" loading="lazy"><div class="cap"><b>Pemberton &amp; Finch — Barbershop</b><small>Victorian-style luxury design with tariff and reservations</small></div></div>
+      <div class="card"><img src="img/sample-24.jpg" alt="Scoop Troop — Ice Cream Shop website design" loading="lazy"><div class="cap"><b>Scoop Troop — Ice Cream Shop</b><small>Playful, colourful design with flavour menu</small></div></div>
+      <div class="card"><img src="img/sample-40.jpg" alt="Prof. Whittle — Escape Rooms website design" loading="lazy"><div class="cap"><b>Prof. Whittle — Escape Rooms</b><small>Blueprint-style design with room listings and booking</small></div></div>
+      <div class="card"><img src="img/sample-05.jpg" alt="Honest Abe Auto — Auto Repair website design" loading="lazy"><div class="cap"><b>Honest Abe Auto — Auto Repair</b><small>Bold one-page site with services and booking</small></div></div>
+      <div class="card"><img src="img/sample-13.jpg" alt="Thornwood Forge — Ironworks website design" loading="lazy"><div class="cap"><b>Thornwood Forge — Ironworks</b><small>Old English craftsmanship style with gallery</small></div></div>
+      <div class="card"><img src="img/sample-20.jpg" alt="The Monarch Ballroom — Event Venue website design" loading="lazy"><div class="cap"><b>The Monarch Ballroom — Event Venue</b><small>Royal, elegant design for events and bookings</small></div></div>
+      <div class="card"><img src="img/sample-27.jpg" alt="Rollerama — Roller Rink website design" loading="lazy"><div class="cap"><b>Rollerama — Roller Rink</b><small>Retro neon design with sessions and pricing</small></div></div>
+      <div class="card"><img src="img/sample-30.jpg" alt="Flannel &amp; Fig — Coffeehouse website design" loading="lazy"><div class="cap"><b>Flannel &amp; Fig — Coffeehouse</b><small>Warm, cosy design with menu and hours</small></div></div>
+      <div class="card"><img src="img/sample-33.jpg" alt="Side B Records — Record Shop website design" loading="lazy"><div class="cap"><b>Side B Records — Record Shop</b><small>Music-store design with catalogue and visit info</small></div></div>
+      <div class="card"><img src="img/sample-36.jpg" alt="Blue Horizon — Scenic Air Tours website design" loading="lazy"><div class="cap"><b>Blue Horizon — Scenic Air Tours</b><small>Airy travel design with tours and booking</small></div></div>
+      <div class="card"><img src="img/sample-38.jpg" alt="Ironhide Leatherworks — Leather Goods website design" loading="lazy"><div class="cap"><b>Ironhide Leatherworks — Leather Goods</b><small>Rugged craft design with product showcase</small></div></div>
+    </div>
   </div>
 </section>
 
 <section id="contact" class="contact">
   <div class="wrap">
     <h2>CONTACT</h2>
-    <p>I'm available for freelance and contract web design work, starting immediately.</p>
+    <p>I'm available for freelance and contract work — art commissions, design, and web — starting immediately.</p>
     <p>Email: <a href="mailto:richardallenlewis2@gmail.com">richardallenlewis2@gmail.com</a></p>
     <p>Phone: <a href="tel:+12267587783">+1 (226) 758-7783</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/richard-lewis-60b454443/">richard-lewis</a></p>
@@ -85,43 +148,21 @@
 
 <div class="lightbox" id="lightbox">
   <span class="close" id="lbClose">&times;</span>
-  <span class="nav prev" id="lbPrev">&#10094;</span>
-  <img id="lbImg" src="" alt="Design sample full view">
-  <span class="nav next" id="lbNext">&#10095;</span>
+  <img id="lbImg" src="" alt="Portfolio piece full view">
 </div>
 
 <script>
-const works = [
-  {img:'img/sample-02.jpg', title:'Velvet & Vine — Hair Salon', sub:'Elegant one-page site with service menu and booking flow'},
-  {img:'img/sample-10.jpg', title:'Pemberton & Finch — Barbershop', sub:'Victorian-style luxury design with tariff and reservations'},
-  {img:'img/sample-24.jpg', title:'Scoop Troop — Ice Cream Shop', sub:'Playful, colourful design with flavour menu'},
-  {img:'img/sample-40.jpg', title:'Prof. Whittle — Escape Rooms', sub:'Blueprint-style design with room listings and booking'},
-  {img:'img/sample-05.jpg', title:'Honest Abe Auto — Auto Repair', sub:'Bold one-page site with services and booking'},
-  {img:'img/sample-13.jpg', title:'Thornwood Forge — Ironworks', sub:'Old English craftsmanship style with gallery'},
-  {img:'img/sample-20.jpg', title:'The Monarch Ballroom — Event Venue', sub:'Royal, elegant design for events and bookings'},
-  {img:'img/sample-27.jpg', title:'Rollerama — Roller Rink', sub:'Retro neon design with sessions and pricing'},
-  {img:'img/sample-30.jpg', title:'Flannel & Fig — Coffeehouse', sub:'Warm, cosy design with menu and hours'},
-  {img:'img/sample-33.jpg', title:'Side B Records — Record Shop', sub:'Music-store design with catalogue and visit info'},
-  {img:'img/sample-36.jpg', title:'Blue Horizon — Scenic Air Tours', sub:'Airy travel design with tours and booking'},
-  {img:'img/sample-38.jpg', title:'Ironhide Leatherworks — Leather Goods', sub:'Rugged craft design with product showcase'},
-];
-const grid = document.getElementById('grid');
-works.forEach((w,i)=>{
-  const d = document.createElement('div');
-  d.className='card';
-  d.innerHTML = `<img src="${w.img}" alt="${w.title}" loading="lazy"><div class="cap"><b>${w.title}</b><small>${w.sub}</small></div>`;
-  d.onclick = ()=>openLb(i);
-  grid.appendChild(d);
-});
-let cur = 0;
 const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg');
-function openLb(i){ cur=i; lbImg.src=works[i].img; lb.classList.add('open'); }
-function step(n){ cur=(cur+n+works.length)%works.length; lbImg.src=works[cur].img; }
-document.getElementById('lbClose').onclick=()=>lb.classList.remove('open');
-document.getElementById('lbPrev').onclick=e=>{e.stopPropagation();step(-1);};
-document.getElementById('lbNext').onclick=e=>{e.stopPropagation();step(1);};
-lb.onclick=e=>{ if(e.target===lb) lb.classList.remove('open'); };
-document.addEventListener('keydown',e=>{ if(!lb.classList.contains('open'))return; if(e.key==='Escape')lb.classList.remove('open'); if(e.key==='ArrowLeft')step(-1); if(e.key==='ArrowRight')step(1); });
+document.querySelectorAll('.card').forEach(card=>{
+  card.addEventListener('click', ()=>{
+    const img = card.querySelector('img');
+    lbImg.src = img.src; lbImg.alt = img.alt;
+    lb.classList.add('open');
+  });
+});
+document.getElementById('lbClose').onclick = ()=>lb.classList.remove('open');
+lb.onclick = e=>{ if(e.target===lb) lb.classList.remove('open'); };
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') lb.classList.remove('open'); });
 </script>
 </body>
 </html>
